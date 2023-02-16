@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>lets Try EJS here!</title>
+  </head>
+  <body>
+
+    <h1><center>Its a <%=whichOne %> Page</h1>
+
+
+    <% if (whichOne === "donor") { %>
+
+      <%- include('home') %>
+
+    <% } if (whichOne === "recipient") { %>
+
+      <%- include('secrets') %>
+
+    <% } %>
+
+
+  </body>
+</html>
